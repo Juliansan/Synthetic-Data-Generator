@@ -1,4 +1,4 @@
-# Synthetic Data Generator# Synthetic Data Generator# Smart Synthetic Data Generator
+# Synthetic Data Generator
 
 
 
