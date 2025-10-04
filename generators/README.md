@@ -19,49 +19,20 @@ generators/
 
 The base class that all specialized generators inherit from. Provides common utilities:
 
-- `generate()` - Main generation method (implemented by subclasses)
-- `save_to_csv()` - Save DataFrame to CSV
-- `save_to_excel()` - Save DataFrame to Excel
-- `save_to_json()` - Save DataFrame to JSON
-- `preview()` - Display preview of generated data
-- `generate_timestamps()` - Generate timestamp sequences
-- `generate_ids()` - Generate ID values
-- `generate_categorical()` - Generate categorical data
-- `generate_numeric()` - Generate numeric data with distributions
+- `generate_ids()`
+- `generate_categorical()`
+- `generate_numeric()`
+- `add_nulls()`
 
 ### EnvironmentalSensorGenerator
 
-Generates realistic environmental sensor data with temporal patterns.
+Generates realistic environmental sensor data with temporal patterns. This generator is used when you set `generator_type: environmental_sensor` in your YAML configuration.
 
 **Features:**
 - Realistic temperature variations with daily/seasonal patterns
 - Humidity correlated with temperature
 - CO2 level fluctuations based on time of day
 - Multi-sensor support with location tracking
-- Anomaly injection for testing
-
-**Example:**
-```python
-from generators import EnvironmentalSensorGenerator
-
-gen = EnvironmentalSensorGenerator(seed=42)
-
-# Single sensor
-df = gen.generate(
-    n_rows=100,
-    freq='5min',
-    temp_range=(18.0, 26.0),
-    humidity_range=(35.0, 75.0),
-    co2_range=(400, 1000)
-)
-
-# Multiple sensors
-df = gen.generate_multi_sensor(
-    n_sensors=3,
-    readings_per_sensor=50,
-    include_location=True
-)
-```
 
 **Output columns:**
 - `timestamp` - Reading timestamp
@@ -73,7 +44,7 @@ df = gen.generate_multi_sensor(
 
 ### BusinessDataGenerator
 
-Generates realistic business and e-commerce data.
+Generates realistic business and e-commerce data. This generator is used when you set `generator_type: business_data` in your YAML configuration.
 
 **Features:**
 - Customer profiles with contact information
@@ -81,38 +52,15 @@ Generates realistic business and e-commerce data.
 - Product catalogs with pricing
 - Sales aggregates (daily/weekly/monthly)
 
-**Example:**
-```python
-from generators import BusinessDataGenerator
-
-gen = BusinessDataGenerator(seed=42)
-
-# Generate customers
-customers = gen.generate_customers(n_rows=100, include_address=True)
-
-# Generate transactions
-transactions = gen.generate_transactions(
-    n_rows=500,
-    n_customers=100,
-    include_shipping=True
-)
-
-# Generate product catalog
-products = gen.generate_products(n_rows=200, include_inventory=True)
-
-# Generate sales aggregates
-sales = gen.generate_sales_data(n_rows=90, freq='D')
-```
-
-**Available methods:**
-- `generate_customers()` - Customer data with contact info and addresses
-- `generate_transactions()` - Order/transaction data with products and pricing
-- `generate_products()` - Product catalog with categories and inventory
-- `generate_sales_data()` - Aggregated sales metrics
+**Key `data_type` options in YAML:**
+- `customers`: Generates customer data with contact info and addresses.
+- `transactions`: Creates order/transaction data with products and pricing.
+- `products`: Builds a product catalog with categories and inventory.
+- `sales`: Generates aggregated sales metrics.
 
 ### UserDataGenerator
 
-Generates realistic user and account data.
+Generates realistic user and account data. This generator is used when you set `generator_type: user_data` in your YAML configuration.
 
 **Features:**
 - User profiles with demographics
@@ -120,59 +68,58 @@ Generates realistic user and account data.
 - Login activity logs
 - User preferences and settings
 
-**Example:**
-```python
-from generators import UserDataGenerator
-
-gen = UserDataGenerator(seed=42)
-
-# Generate user profiles
-users = gen.generate_user_profiles(
-    n_rows=100,
-    include_bio=True,
-    include_social=True
-)
-
-# Generate account data
-accounts = gen.generate_accounts(n_rows=100, include_subscription=True)
-
-# Generate login activity
-logins = gen.generate_login_activity(n_rows=1000, n_users=100)
-
-# Generate preferences
-prefs = gen.generate_user_preferences(n_rows=100)
-```
-
-**Available methods:**
-- `generate_user_profiles()` - User profiles with personal information
-- `generate_accounts()` - Account and subscription data
-- `generate_login_activity()` - Login event logs
-- `generate_user_preferences()` - User settings and preferences
+**Key `data_type` options in YAML:**
+- `user_profiles`: Creates user profiles with personal information.
+- `accounts`: Generates account and subscription data.
+- `login_activity`: Creates login event logs.
+- `user_preferences`: Generates user settings and preferences.
 
 ## Creating Custom Generators
 
-To create a new specialized generator:
+To create a new specialized generator that works with the CLI:
 
-1. Import and inherit from `BaseGenerator`
-2. Implement the `generate()` method
-3. Use base class utilities for common tasks
+1.  Create a new Python file in the `generators/` directory (e.g., `my_generator.py`).
+2.  In that file, create a class that inherits from `BaseGenerator`.
+3.  Implement the `generate()` method. This method will receive the `config` and `null_config` sections from the YAML file.
+4.  In `config_parser.py`, add your new generator's name to the `GENERATOR_MAP`.
 
-**Example:**
+**Example: `generators/my_generator.py`**
 ```python
-from generators.base_generator import BaseGenerator
+from .base_generator import BaseGenerator
 import pandas as pd
 
 class MyCustomGenerator(BaseGenerator):
-    def __init__(self, locale='en_US', seed=None):
-        super().__init__(locale, seed)
-    
-    def generate(self, n_rows=100, **kwargs):
+    def generate(self, config, null_config=None):
+        # Use parameters from the 'config' section of the YAML
+        num_records = config.get('num_records', 100)
+        my_param = config.get('my_param', 'default_value')
+
         data = {
-            'id': self.generate_ids(n_rows),
-            'timestamp': self.generate_timestamps(n_rows),
-            'value': self.generate_numeric(n_rows, 0, 100)
+            'id': self.generate_ids(num_records),
+            'custom_data': [f"{my_param}_{i}" for i in range(num_records)]
         }
-        return pd.DataFrame(data)
+        df = pd.DataFrame(data)
+
+        # Apply nulls if configured
+        if null_config:
+            # ... apply null logic ...
+
+        return df
+```
+
+**Update `config_parser.py`:**
+```python
+# ... inside ConfigParser class ...
+from generators.my_generator import MyCustomGenerator
+
+class ConfigParser:
+    GENERATOR_MAP = {
+        'environmental_sensor': EnvironmentalSensorGenerator,
+        'business_data': BusinessDataGenerator,
+        'user_data': UserDataGenerator,
+        'my_generator': MyCustomGenerator,  # Add this line
+    }
+    # ... rest of the class
 ```
 
 ## Common Parameters
