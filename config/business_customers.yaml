@@ -1,0 +1,51 @@
+# Business Customer Data Configuration
+# Generate customer profiles for e-commerce
+
+generator: business_customers
+output_file: data/customers.csv
+rows: 1000
+seed: 42
+
+settings:
+  # Include additional fields
+  include_address: true
+  include_signup_date: true
+  
+  # Column nullability configuration
+  columns:
+    customer_id:
+      nullable: false
+    
+    first_name:
+      nullable: false
+    
+    last_name:
+      nullable: false
+    
+    email:
+      nullable: false
+    
+    phone:
+      nullable: true
+      null_rate: 0.10  # 10% don't have phone
+    
+    street_address:
+      nullable: true
+      null_rate: 0.05
+    
+    city:
+      nullable: false
+    
+    state:
+      nullable: true
+      null_rate: 0.02
+    
+    zip_code:
+      nullable: true
+      null_rate: 0.05
+    
+    country:
+      nullable: false
+    
+    signup_date:
+      nullable: false

@@ -1,0 +1,100 @@
+customer_id,first_name,last_name,email,phone,street_address,city,state,zip_code,country,signup_date
+CUST_1,Danielle,Garcia,valerieboyd@example.com,477-731-8063,517 Bryant Squares Apt. 274,New Tammy,Idaho,26389,Tokelau,2025-10-01 14:15:13.441465
+CUST_2,Angel,Jennings,joshua89@example.net,431-807-4279x9077,211 Juan Rest Suite 264,Drewborough,New York,25547,Georgia,2025-06-26 15:32:50.393317
+CUST_3,Joshua,Stephens,conniesimmons@example.com,(657)801-6580,29758 Shannon Valleys,Lake Brittanymouth,Kansas,31069,Central African Republic,2023-10-21 11:43:24.954139
+CUST_4,Jeffrey,Levine,comptonshelly@example.net,001-849-789-3195x08501,542 Madeline Key Suite 570,Palmerville,Maine,26276,Ireland,2023-12-08 06:42:26.550619
+CUST_5,Jill,Howard,ufloyd@example.net,590.355.2818x325,8209 David Ways Suite 709,Michelleland,Florida,89996,Guatemala,2024-04-06 07:16:38.604348
+CUST_6,Erica,Sanders,trussell@example.com,+1-779-733-5548x6401,016 Sara Junctions,Patrickberg,Delaware,16726,Kyrgyz Republic,2025-07-15 22:09:08.197761
+CUST_7,Patricia,Lopez,karenwells@example.org,,0723 Joshua Way Suite 282,North Sophia,Wyoming,83372,Maldives,2024-08-27 01:46:11.965394
+CUST_8,Christopher,Martinez,meredith27@example.org,911.462.4112x412,400 Todd Run Apt. 247,Dorothybury,Delaware,,Sierra Leone,2025-01-25 23:55:09.162227
+CUST_9,Robert,Charles,jfaulkner@example.net,880.946.8275,26168 Smith Circles,East Mario,Georgia,70939,Nicaragua,2024-04-19 10:17:43.587828
+CUST_10,Anthony,Gibson,paulscott@example.com,001-904-931-0385x6955,8011 Villegas Ridge,North Danielmouth,Alaska,67955,Saudi Arabia,2025-08-26 13:23:09.715747
+CUST_11,Jeffery,Bates,nielsenmelanie@example.org,,1152 Miller Cape,New Jamie,Wyoming,28097,Sri Lanka,2024-10-25 03:26:53.552783
+CUST_12,William,May,brettbennett@example.net,272-792-8422x2231,70923 Antonio Cliffs Suite 950,Smithtown,Hawaii,70411,Jordan,2024-03-07 04:47:36.289375
+CUST_13,Anthony,Harper,russojacob@example.net,001-727-745-2380,4189 Hoffman Islands,Johnsfurt,South Carolina,37323,Sudan,2024-06-10 20:15:49.468734
+CUST_14,James,Smith,timothybooth@example.com,(857)982-8410,,Taylorfort,Colorado,48622,Cuba,2025-08-26 02:06:56.719913
+CUST_15,Debra,Buchanan,susan03@example.org,001-927-752-0885x47492,1619 Tiffany Flats Suite 813,Lake Ashleychester,Vermont,52749,Philippines,2025-07-31 20:45:32.991605
+CUST_16,Amy,Sanchez,burgesskaren@example.org,001-917-702-8140x693,45025 Walker Falls,Grahamside,Virginia,83681,Grenada,2025-02-04 18:20:55.842342
+CUST_17,Jeffrey,Martinez,randyallen@example.com,550-293-9834,4357 Warren View,Port Steven,Indiana,11313,Guyana,2025-04-18 15:45:57.045073
+CUST_18,Bridget,Cunningham,oscar85@example.com,287-718-6375,2680 Atkins Plains,Lake Cassandra,North Carolina,17262,Madagascar,2025-02-17 14:17:22.509090
+CUST_19,Lisa,Jones,michael77@example.org,(326)556-5045x5478,67398 Veronica Glen Suite 883,South Robertfort,Colorado,47693,Lebanon,2024-07-30 20:23:58.160612
+CUST_20,Adam,Hubbard,ugill@example.org,001-576-674-2662x9912,,Lake Robertville,Iowa,85130,Korea,2024-02-18 05:01:50.200671
+CUST_21,Linda,Clark,lawrence09@example.org,985.419.6106x4628,065 Harvey Knoll Apt. 562,Thomasport,Arizona,64315,Finland,2024-09-10 18:53:05.709492
+CUST_22,Helen,Robinson,allentran@example.net,626.948.7049,209 Amber Isle,Hoffmanport,Colorado,72253,Singapore,2025-03-18 18:03:33.923644
+CUST_23,Matthew,Kane,mphillips@example.com,+1-373-600-2447,07409 Pamela Courts Apt. 178,New Petershire,Maine,82543,Western Sahara,2025-06-24 22:49:08.158151
+CUST_24,Eric,Murphy,noahwhitaker@example.com,(827)630-1471x95979,90254 Fleming Center Apt. 206,North Jeremy,Pennsylvania,02157,Trinidad and Tobago,2024-09-12 23:57:11.646650
+CUST_25,Susan,Hernandez,jonathan77@example.com,+1-971-458-9042x9025,54120 Elizabeth Falls Suite 595,South Megan,Maryland,35809,Guatemala,2024-08-16 12:11:04.213854
+CUST_26,Matthew,Lester,jessicabell@example.org,(520)445-6504x481,26015 Matthew Wall,Lauraview,Oklahoma,61415,Tonga,2024-09-13 01:15:04.432557
+CUST_27,Christopher,Smith,iwhite@example.net,001-419-228-5544x51895,9479 Johnson Haven,Mcdonaldville,Arizona,29221,Brunei Darussalam,2024-09-20 16:09:41.725512
+CUST_28,Colin,Garrison,warrenmary@example.org,(584)457-6521,1732 Larson Causeway,South Benjaminbury,Hawaii,58158,Israel,2025-01-12 06:41:10.955624
+CUST_29,Melanie,Thomas,duranrobert@example.net,233.989.8881x67112,950 Elizabeth Village Apt. 006,South Kristenview,South Carolina,13742,Croatia,2025-08-03 01:37:48.428905
+CUST_30,Cassandra,Anderson,carloshernandez@example.org,,934 James Prairie Apt. 045,New Jenniferfort,North Dakota,78153,Seychelles,2024-11-04 02:32:11.176423
+CUST_31,Lindsay,King,nbrooks@example.net,001-923-842-3216x110,,East Kennethmouth,Rhode Island,69151,Reunion,2025-08-23 12:43:19.382197
+CUST_32,Jessica,Thompson,bhopkins@example.org,6312089071,913 Gilmore Ridges Apt. 855,Lake Susanmouth,Arkansas,93675,French Southern Territories,2025-08-22 21:04:22.679892
+CUST_33,Amanda,Guerrero,hsmith@example.net,,9520 Hughes Bypass,North Andreastad,Oklahoma,84612,Macao,2024-12-16 10:02:35.342412
+CUST_34,Teresa,Johnson,amanda40@example.net,5123495528,7990 Raymond Meadow,East Randyside,Ohio,82591,Mali,2024-03-28 05:03:09.603139
+CUST_35,Nicholas,Smith,ldrake@example.org,290-383-3428,86774 Kimberly Garden,New Peter,Tennessee,49218,Zambia,2025-03-13 08:03:57.323332
+CUST_36,Andrea,Tyler,warrenjohn@example.net,787.859.2712,423 Ashley Heights Suite 953,South Joshuaville,North Dakota,99164,Martinique,2025-08-09 00:12:28.611516
+CUST_37,Maria,Young,lisa46@example.org,(638)236-1517x18275,67762 Murphy Forge,Sandraland,Virginia,90558,Cambodia,2025-06-26 09:28:22.236087
+CUST_38,Christine,Morris,susan79@example.org,,501 Lewis Light,Lake Rachel,California,89306,Congo,2024-11-24 17:11:35.731809
+CUST_39,Michelle,Thompson,kevinclayton@example.org,+1-264-963-1752,2624 Stephen Glens Apt. 902,Port Nancy,Pennsylvania,15400,San Marino,2024-01-06 14:40:38.539049
+CUST_40,Barbara,Williams,davisnicholas@example.net,+1-716-578-1126x69121,34511 Jo Bypass,South Laura,Missouri,63090,Saudi Arabia,2024-09-28 18:36:51.186927
+CUST_41,Janet,Harmon,abrown@example.net,939-861-3674x99465,605 Adam Track,East Daniel,Utah,55677,Lithuania,2024-04-07 17:18:33.244581
+CUST_42,Brandon,Fox,christopherbruce@example.net,384.227.1147x7320,430 Olivia Crescent Apt. 667,New Jeanmouth,Nebraska,75391,Swaziland,2024-12-15 07:53:36.821013
+CUST_43,Jeremy,Reese,ariel18@example.org,,90457 Webster Port,Laurahaven,Maryland,86841,Niue,2024-12-08 01:11:04.744865
+CUST_44,Keith,Alvarez,jasonparrish@example.net,+1-287-273-4778x48588,9212 Collins Locks Apt. 336,East Michellebury,Mississippi,51047,Canada,2025-09-09 08:43:39.669457
+CUST_45,Christopher,Strickland,enelson@example.net,(916)875-6770x02842,27558 Chris Mountain,Port Victoria,Hawaii,71326,Germany,2025-09-05 09:26:04.763157
+CUST_46,Jesse,Palmer,rachel90@example.org,(946)971-9788,92071 Laurie Ville Apt. 380,Port Wesley,Illinois,02671,Georgia,2023-12-19 10:02:41.317394
+CUST_47,Craig,Rodriguez,alexis39@example.org,+1-728-606-4796,62192 Michael Pine,Jamesland,Delaware,86031,French Polynesia,2025-03-26 05:07:00.751564
+CUST_48,Joshua,Gordon,thickman@example.org,700-790-2559x05616,,South Michaelbury,Oregon,82792,San Marino,2024-03-04 19:28:00.222417
+CUST_49,Cynthia,Dougherty,ashleyatkinson@example.net,(250)733-3491x14152,86385 Pierce Common,Melissafort,Connecticut,51116,Colombia,2025-08-02 09:23:19.454984
+CUST_50,Michael,Williams,patrick21@example.net,2767986407,,Matthewview,Utah,39271,Brunei Darussalam,2024-10-03 08:01:44.397451
+CUST_51,Mitchell,Logan,brian63@example.org,(496)659-1713x5785,931 Franklin Drives Suite 284,Berrystad,Oregon,48935,Northern Mariana Islands,2025-08-18 07:18:00.136943
+CUST_52,Jason,Camacho,cassie99@example.com,(863)571-8344x049,0182 Jennifer Neck Apt. 002,North Nancyland,Pennsylvania,93040,Gibraltar,2024-08-26 03:07:03.003345
+CUST_53,Joseph,Boyd,anthony47@example.com,+1-519-719-5419x876,482 Derek Drives,Brandonland,Arizona,47233,Cook Islands,2024-06-05 18:53:46.743428
+CUST_54,Sharon,Ellis,michaelpugh@example.com,848-646-8536,1447 Pena Street,New John,North Carolina,40761,Greece,2025-02-22 19:49:52.063981
+CUST_55,Deborah,Maynard,eringuerrero@example.org,+1-687-882-0829x737,811 Dickson Lake,New Markhaven,Georgia,40143,Brazil,2025-04-25 22:23:43.508679
+CUST_56,Chelsea,Brown,lauren11@example.com,001-608-835-7232,020 Barry Fords,Knighttown,California,95909,Bangladesh,2023-10-14 04:10:13.033316
+CUST_57,George,Mendoza,normanbowers@example.org,,2322 Jimenez Vista,West Lindsey,Texas,91092,United Arab Emirates,2024-12-01 03:16:08.407411
+CUST_58,Jessica,Morales,gstewart@example.org,5344778660,135 Blake Trail,Garciafort,Indiana,19385,Lao People's Democratic Republic,2025-04-11 07:52:33.823128
+CUST_59,Frank,Parks,hahnsean@example.com,,165 Richard Locks,Port Toddtown,Illinois,13065,Malta,2025-01-06 01:03:29.456189
+CUST_60,Noah,Henry,andersonjacob@example.com,365-616-2319,05937 Stevens Locks,North Michael,Massachusetts,48689,Philippines,2025-04-07 22:14:54.210843
+CUST_61,Veronica,Browning,fgarcia@example.com,313.491.5596x3632,832 Gabriela Run,Solomonshire,Montana,64656,Moldova,2025-06-13 11:50:23.886177
+CUST_62,Danielle,Jones,carlsonkristen@example.com,747.364.9078,161 Evans Way,Charlesview,Oklahoma,87754,Saudi Arabia,2024-06-26 21:12:29.208707
+CUST_63,Angela,Miller,carterpaul@example.org,286-573-4257x54090,98310 Wright Streets,Smithland,Washington,91822,Colombia,2025-07-13 17:36:48.744711
+CUST_64,Gabrielle,Franklin,ashleyjackson@example.com,686-645-1837x606,96622 Laurie Flats Apt. 670,Kingbury,Vermont,71198,Micronesia,2025-05-25 06:08:45.802793
+CUST_65,Megan,Jones,dominicturner@example.com,634-332-7560,6856 Stevens Terrace,Jasonmouth,Indiana,29658,Anguilla,2024-04-17 18:38:19.722193
+CUST_66,Kimberly,Hill,bryanhamilton@example.com,001-777-965-6124x81569,3621 Cox Circle,Hansenville,Connecticut,61261,Greenland,2024-10-01 16:14:01.139724
+CUST_67,Jeremy,Schultz,todd15@example.com,001-300-327-2063x459,444 Scott Meadows Suite 349,Gallagherfurt,New Hampshire,,Aruba,2025-09-09 12:40:33.974948
+CUST_68,Antonio,Kelley,jennifersimpson@example.net,(438)629-6577,396 Smith Rue,Marshallchester,Georgia,88151,Egypt,2024-10-24 20:32:03.899113
+CUST_69,Leslie,Nguyen,stephentaylor@example.org,,73226 Ryan Village Apt. 142,North Paulbury,Iowa,21124,El Salvador,2025-04-13 09:56:02.953807
+CUST_70,Joseph,Vang,ncook@example.com,001-530-608-9317,62585 Nunez Courts Apt. 879,Markshire,Wisconsin,57527,Guadeloupe,2025-02-13 13:26:44.958433
+CUST_71,Jason,Schmidt,scott69@example.org,001-320-269-6942x152,962 Jennifer View,Rhodesbury,Nevada,38428,Haiti,2024-05-12 15:24:54.910396
+CUST_72,Sherri,Chavez,malik37@example.com,001-886-477-1333x447,996 Walker Points,Lake Kathrynbury,South Dakota,04448,Denmark,2024-10-27 04:33:33.696344
+CUST_73,Nancy,Jacobs,tamaranovak@example.com,,,East Jeremiahview,Montana,42864,Micronesia,2024-04-18 22:15:31.895267
+CUST_74,Leonard,Garcia,yfaulkner@example.org,(697)310-7256x366,,Goodmanmouth,New York,27535,Saint Pierre and Miquelon,2025-09-11 23:40:16.501804
+CUST_75,Diana,Miles,nicholas65@example.org,280-205-3759,0545 Osborne Loaf Suite 757,Ritafort,Arkansas,93993,Malta,2025-05-15 15:56:46.963795
+CUST_76,Randall,Farrell,brittanygardner@example.net,689-464-6528x092,453 Rasmussen Mews Suite 974,Virginiamouth,Maryland,19567,Colombia,2024-03-20 01:34:31.597423
+CUST_77,Robin,Curtis,bentonsteven@example.net,475.972.1586x24150,9861 Clark Harbors Apt. 125,Port Aaronside,Virginia,82976,Malawi,2024-10-17 10:25:54.181664
+CUST_78,Stephen,Mack,samuelcarter@example.net,,0809 Schaefer River Suite 815,Pennyton,Vermont,59523,Latvia,2025-04-18 19:54:04.070023
+CUST_79,Joseph,Le,fuenteslaura@example.com,+1-970-632-0320,9255 Sanders Vista,Jaclynmouth,California,26481,Cayman Islands,2024-09-07 05:00:04.174680
+CUST_80,John,Lewis,ttaylor@example.org,(976)917-0758,13074 John Trail Apt. 426,Port Dave,New Mexico,85395,Albania,2024-08-16 14:44:54.993246
+CUST_81,Anna,Hayes,donna66@example.org,512.215.1342x2849,0489 John Estate,West Paulmouth,Colorado,79476,Estonia,2025-06-28 20:34:51.419725
+CUST_82,Jose,Perez,eewing@example.net,392.761.3715x04165,45430 Knight Forges Suite 310,Franciston,Alabama,56688,Kazakhstan,2025-01-29 09:05:46.728601
+CUST_83,Brenda,Morgan,sferguson@example.com,(701)277-7490,178 Gillespie Divide,Wheelershire,Tennessee,68972,Indonesia,2025-02-20 09:36:02.306031
+CUST_84,Rachael,Chavez,gibbsmichael@example.net,,58718 Flores Fords,Lisaport,Indiana,69879,Lebanon,2023-10-10 21:52:30.094772
+CUST_85,Reginald,Perry,rodriguezjohn@example.net,(342)636-1032x6642,426 Green Vista Suite 017,Gutierrezville,Vermont,48035,Jordan,2024-05-05 02:18:58.015974
+CUST_86,Jeffrey,Davis,gabriel90@example.net,964.692.5158x3776,208 Hogan Wells,North Brettshire,Oklahoma,81338,Hong Kong,2024-04-14 02:53:55.597877
+CUST_87,Whitney,Simmons,vrasmussen@example.com,001-896-316-5926,77729 Ross Islands,Myersmouth,Oregon,27263,United States Virgin Islands,2024-01-08 00:19:10.526104
+CUST_88,William,Ortega,smithjonathan@example.net,3856732788,37014 Debbie Cape Suite 278,Kellystad,Colorado,,Honduras,2024-02-17 11:02:33.752937
+CUST_89,Christopher,Brooks,seanmyers@example.net,261.374.2243x864,55800 Samantha Orchard,Petersonberg,South Carolina,95636,Russian Federation,2023-11-16 18:55:49.287315
+CUST_90,Brandon,Hernandez,michaeljohnson@example.org,6817866179,214 Luis Shore,Hernandezfurt,Delaware,17905,Aruba,2023-10-12 20:20:18.874531
+CUST_91,Daniel,Leblanc,robert11@example.net,891-680-1722x601,60943 Kayla Forge,West William,North Carolina,69467,Martinique,2023-12-30 12:52:30.776606
+CUST_92,Courtney,Jones,michaelcooper@example.org,897-279-4523x21941,172 James Flat Suite 955,Sherrytown,Wisconsin,73389,Brunei Darussalam,2024-08-30 08:35:34.365943
+CUST_93,Laura,Decker,gbailey@example.com,9616027769,620 Barbara Roads,New Alex,New Mexico,28469,Mauritius,2025-07-01 02:17:40.743451
+CUST_94,Robert,Davis,tflores@example.org,+1-595-264-1220x310,52595 Renee Drive Apt. 273,Suefurt,Maine,83818,Mayotte,2024-10-09 01:02:50.294746
+CUST_95,Bryan,Davis,johnsonmatthew@example.org,972.436.8314,992 Justin Walk,Judithtown,Arizona,75495,Lithuania,2025-05-05 16:26:56.480524
+CUST_96,Patrick,Rodgers,sarahyang@example.net,560.612.2777x0793,353 Jeremy Meadow Apt. 850,Grayshire,Massachusetts,05483,French Southern Territories,2025-05-01 07:34:51.946395
+CUST_97,Wendy,Cain,andrearivera@example.com,001-660-250-1667,1087 William Loaf Suite 182,Port Stephanie,Alaska,29461,Gibraltar,2025-05-14 05:55:21.987148
+CUST_98,Allison,Hawkins,zhall@example.net,767.389.9730x8069,0107 Eric Courts,Joneshaven,Delaware,79567,Romania,2024-04-09 17:55:51.994992
+CUST_99,Tasha,Willis,jacobsandoval@example.com,,838 Janice Walks Suite 648,South Kimberly,Kansas,,Qatar,2025-03-28 08:35:13.269441

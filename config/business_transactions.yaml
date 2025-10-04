@@ -1,0 +1,55 @@
+# Business Transaction Data Configuration
+# Generate e-commerce transaction/order data
+
+generator: business_transactions
+output_file: data/transactions.csv
+rows: 5000
+seed: 42
+
+settings:
+  n_customers: 1000  # Number of unique customers
+  include_shipping: true
+  
+  # Date range for transactions
+  start_date: "2025-01-01"
+  end_date: "2025-09-30"
+  
+  # Column nullability
+  columns:
+    transaction_id:
+      nullable: false
+    
+    customer_id:
+      nullable: false
+    
+    transaction_date:
+      nullable: false
+    
+    product_name:
+      nullable: false
+    
+    category:
+      nullable: false
+    
+    unit_price:
+      nullable: false
+    
+    quantity:
+      nullable: false
+    
+    subtotal:
+      nullable: false
+    
+    tax:
+      nullable: true
+      null_rate: 0.02  # Some tax-exempt transactions
+    
+    shipping_cost:
+      nullable: true
+      null_rate: 0.15  # Free shipping sometimes
+    
+    total_amount:
+      nullable: false
+    
+    status:
+      nullable: false

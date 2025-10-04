@@ -1,0 +1,43 @@
+# Environmental Sensor Data Configuration
+# Generate realistic sensor readings with temporal patterns
+
+generator: environmental_sensor
+output_file: data/sensor_readings.csv
+rows: 288  # 24 hours at 5-minute intervals
+seed: 42
+
+# Generator-specific settings
+settings:
+  frequency: "5min"  # 1min, 5min, 15min, 1H, etc.
+  start_date: "2025-09-01 00:00:00"  # Optional, defaults to 30 days ago
+  
+  # Temperature settings
+  temperature:
+    min: 18.0
+    max: 26.0
+    nullable: false
+    null_rate: 0.0
+  
+  # Humidity settings
+  humidity:
+    min: 35.0
+    max: 75.0
+    nullable: true
+    null_rate: 0.05  # 5% null values
+  
+  # CO2 level settings
+  co2_level:
+    min: 400
+    max: 1200
+    nullable: true
+    null_rate: 0.02  # 2% null values
+  
+  # Sensor configuration
+  sensors:
+    - id: "SENSOR_001"
+      location: "Building A - Floor 1 - Room 101"
+  
+  # Add anomalies for testing
+  anomalies:
+    enabled: true
+    rate: 0.03  # 3% anomalous readings

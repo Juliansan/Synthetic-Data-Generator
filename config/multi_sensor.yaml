@@ -1,0 +1,44 @@
+# Multi-Sensor Environmental Monitoring Configuration
+# Multiple sensors across different locations
+
+generator: environmental_sensor
+output_file: data/multi_sensor_readings.csv
+rows: 480  # 2 days at 15-minute intervals for each sensor
+seed: 42
+
+settings:
+  frequency: "15min"
+  start_date: "2025-09-01 00:00:00"
+  
+  temperature:
+    min: 19.0
+    max: 25.0
+    nullable: true
+    null_rate: 0.01
+  
+  humidity:
+    min: 40.0
+    max: 60.0
+    nullable: true
+    null_rate: 0.02
+  
+  co2_level:
+    min: 400
+    max: 1000
+    nullable: true
+    null_rate: 0.03
+  
+  # Multiple sensors with different locations
+  sensors:
+    - id: "ROOM_101"
+      location: "Building A - Floor 1 - Room 101"
+    - id: "ROOM_102"
+      location: "Building A - Floor 1 - Room 102"
+    - id: "CONF_ROOM"
+      location: "Building A - Floor 2 - Conference Room"
+    - id: "LOBBY"
+      location: "Building B - Floor 1 - Lobby"
+  
+  anomalies:
+    enabled: false
+    rate: 0.0

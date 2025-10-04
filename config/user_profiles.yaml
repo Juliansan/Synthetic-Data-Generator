@@ -1,0 +1,58 @@
+# User Profile Data Configuration
+# Generate user account and profile data
+
+generator: user_profiles
+output_file: data/user_profiles.csv
+rows: 500
+seed: 42
+
+settings:
+  include_bio: true
+  include_social: true
+  
+  # Column nullability configuration
+  columns:
+    user_id:
+      nullable: false
+    
+    username:
+      nullable: false
+    
+    email:
+      nullable: false
+    
+    first_name:
+      nullable: false
+    
+    last_name:
+      nullable: false
+    
+    date_of_birth:
+      nullable: true
+      null_rate: 0.20  # 20% prefer not to share
+    
+    phone:
+      nullable: true
+      null_rate: 0.30  # 30% don't provide phone
+    
+    city:
+      nullable: true
+      null_rate: 0.10
+    
+    country:
+      nullable: false
+    
+    account_created:
+      nullable: false
+    
+    bio:
+      nullable: true
+      null_rate: 0.50  # 50% don't fill bio
+    
+    website:
+      nullable: true
+      null_rate: 0.70  # Most don't have website
+    
+    twitter_handle:
+      nullable: true
+      null_rate: 0.60  # 60% don't link twitter
