@@ -81,12 +81,12 @@ class BusinessDataGenerator(BaseGenerator):
             })
         
         if include_signup_date:
-            data['signup_date'] = self.generate_timestamps(
+            data['signup_date'] = [ts.isoformat() for ts in self.generate_timestamps(
                 n_rows, 
                 start_date=datetime.now() - timedelta(days=730),
                 end_date=datetime.now(),
                 sorted=False
-            )
+            )]
         
         return pd.DataFrame(data)
     
@@ -146,6 +146,7 @@ class BusinessDataGenerator(BaseGenerator):
             shipping_costs = [round(np.random.uniform(0, 15), 2) for _ in range(n_rows)]
             totals = [round(s + t + sh, 2) for s, t, sh in zip(subtotals, taxes, shipping_costs)]
         else:
+            shipping_costs = [0.0] * n_rows
             totals = [round(s + t, 2) for s, t in zip(subtotals, taxes)]
         
         data = {

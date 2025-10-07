@@ -120,7 +120,7 @@ class UserDataGenerator(BaseGenerator):
             ]
             data['monthly_fee'] = self.generate_categorical(
                 n_rows,
-                [0, 9.99, 19.99, 99.99],
+                ['0', '9.99', '19.99', '99.99'],
                 weights=[0.5, 0.25, 0.15, 0.1]
             )
         
@@ -180,7 +180,7 @@ class UserDataGenerator(BaseGenerator):
             ),
             'login_success': self.generate_categorical(
                 n_rows,
-                [True, False],
+                ['True', 'False'],
                 weights=[0.95, 0.05]
             )
         }
@@ -219,12 +219,12 @@ class UserDataGenerator(BaseGenerator):
             ),
             'email_notifications': self.generate_categorical(
                 n_rows,
-                [True, False],
+                ['True', 'False'],
                 weights=[0.7, 0.3]
             ),
             'push_notifications': self.generate_categorical(
                 n_rows,
-                [True, False],
+                ['True', 'False'],
                 weights=[0.6, 0.4]
             ),
             'privacy_mode': self.generate_categorical(

@@ -3,7 +3,7 @@
 
 generator: business_transactions
 output_file: data/transactions.csv
-rows: 5000
+rows: 10000
 seed: 42
 
 settings:
@@ -11,7 +11,7 @@ settings:
   include_shipping: true
   
   # Date range for transactions
-  start_date: "2025-01-01"
+  start_date: "2024-01-01"
   end_date: "2025-09-30"
   
   # Column nullability
