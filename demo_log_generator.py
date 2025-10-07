@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from generators import LogDataGenerator
-from datetime import datetime, timedelta
+from datetime import datetime
 
 
 def demo_log_strings():

@@ -70,22 +70,32 @@ class ConfigParser:
     
     def get_generator_type(self) -> str:
         """Get the generator type"""
+        if self.config is None:
+            raise ValueError("Configuration not loaded")
         return self.config['generator']
     
     def get_output_file(self) -> str:
         """Get output file path"""
+        if self.config is None:
+            raise ValueError("Configuration not loaded")
         return self.config['output_file']
     
     def get_rows(self) -> int:
         """Get number of rows to generate"""
+        if self.config is None:
+            raise ValueError("Configuration not loaded")
         return self.config['rows']
     
     def get_seed(self) -> Optional[int]:
         """Get random seed"""
+        if self.config is None:
+            raise ValueError("Configuration not loaded")
         return self.config.get('seed')
     
     def get_settings(self) -> Dict[str, Any]:
         """Get generator-specific settings"""
+        if self.config is None:
+            raise ValueError("Configuration not loaded")
         return self.config.get('settings', {})
     
     def get_column_config(self, column_name: str) -> Dict[str, Any]:

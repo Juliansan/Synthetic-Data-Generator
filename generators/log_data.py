@@ -149,10 +149,10 @@ class LogDataGenerator(BaseGenerator):
                 'Rate limit exceeded'
             ]
             
-            def generate_error_msg(row):
+            def generate_error_msg(row) -> str:
                 if row['status'] in ['FAILED', 'TIMEOUT', 'CANCELLED']:
-                    return np.random.choice(error_messages)
-                return None
+                    return str(np.random.choice(error_messages))
+                return ""
             
             df['error_message'] = df.apply(generate_error_msg, axis=1)
         
