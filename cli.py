@@ -21,7 +21,8 @@ from config_parser import ConfigParser
 from generators import (
     EnvironmentalSensorGenerator,
     BusinessDataGenerator,
-    UserDataGenerator
+    UserDataGenerator,
+    LogDataGenerator
 )
 
 console = Console()
@@ -38,6 +39,8 @@ def create_generator(config: ConfigParser):
         return BusinessDataGenerator(seed=seed)
     elif gen_type.startswith('user'):
         return UserDataGenerator(seed=seed)
+    elif gen_type == 'job_logs' or gen_type.startswith('log'):
+        return LogDataGenerator(seed=seed)
     else:
         raise ValueError(f"Unknown generator type: {gen_type}")
 
@@ -170,6 +173,51 @@ def generate_user_profiles(config: ConfigParser):
     return df
 
 
+def generate_job_logs(config: ConfigParser):
+    """Generate job/process log data"""
+    generator = LogDataGenerator(seed=config.get_seed())
+    settings = config.get_settings()
+    
+    # Get time range
+    start_date = config.parse_date(settings.get('start_date'))
+    end_date = config.parse_date(settings.get('end_date'))
+    
+    # Get frequency
+    freq = settings.get('frequency', '15min')
+    
+    # Get custom job names if provided
+    job_names = settings.get('job_names', None)
+    
+    # Get status distribution
+    status_dist = settings.get('status_distribution', None)
+    
+    # Get duration range
+    duration_config = settings.get('duration', {})
+    duration_range = (
+        duration_config.get('min', 10),
+        duration_config.get('max', 300)
+    )
+    
+    # Additional fields
+    include_error_message = settings.get('include_error_message', False)
+    include_severity = settings.get('include_severity', False)
+    
+    # Generate data
+    df = generator.generate(
+        n_rows=config.get_rows(),
+        start_date=start_date,
+        end_date=end_date,
+        freq=freq,
+        job_names=job_names,
+        status_distribution=status_dist,
+        duration_range=duration_range,
+        include_error_message=include_error_message,
+        include_severity=include_severity
+    )
+    
+    return df
+
+
 @click.group()
 @click.version_option(version="2.0.0")
 def cli():
@@ -232,6 +280,8 @@ def generate(config_file, preview, stats):
                 df = generate_business_transactions(config)
             elif gen_type == 'user_profiles':
                 df = generate_user_profiles(config)
+            elif gen_type == 'job_logs' or gen_type.startswith('log'):
+                df = generate_job_logs(config)
             else:
                 raise ValueError(f"Generator type not implemented: {gen_type}")
             

@@ -21,7 +21,8 @@ class ConfigParser:
         'user_profiles',
         'user_accounts',
         'user_activity',
-        'user_preferences'
+        'user_preferences',
+        'job_logs'
     ]
     
     def __init__(self, config_path: str):

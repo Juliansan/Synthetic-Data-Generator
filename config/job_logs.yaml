@@ -1,0 +1,49 @@
+# Job Log Data Configuration
+# Generate job/process log entries
+
+generator: job_logs
+output_file: data/job_logs.csv
+rows: 500
+seed: 42
+
+settings:
+  # Time range for logs
+  start_date: "2025-01-01 00:00:00"
+  end_date: "2025-01-31 23:59:59"
+  
+  # Log frequency (how often logs are generated)
+  # Options: '5min', '15min', '30min', '1H', etc.
+  frequency: '15min'
+  
+  # Custom job names (optional - if not provided, uses defaults)
+  # job_names:
+  #   - custom_job_1
+  #   - custom_job_2
+  #   - custom_job_3
+  
+  # Status distribution (optional - defaults to 70% success)
+  status_distribution:
+    SUCCESS: 0.70
+    FAILED: 0.15
+    WARNING: 0.10
+    TIMEOUT: 0.03
+    CANCELLED: 0.02
+  
+  # Duration range in seconds
+  duration:
+    min: 10
+    max: 300
+  
+  # Additional fields
+  include_error_message: true
+  include_severity: true
+  
+  # Output format options
+  # Set to 'log_string' to generate formatted log strings like:
+  # "2025-01-15 08:30:00|customer_etl|SUCCESS|45"
+  output_format: 'dataframe'  # Options: 'dataframe' or 'log_string'
+  
+  # If output_format is 'log_string', these settings apply:
+  log_string_settings:
+    separator: '|'
+    timestamp_format: '%Y-%m-%d %H:%M:%S'
